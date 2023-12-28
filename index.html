@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Morse Code Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-3">Morse Code Converter</h1>
+
+      <div class="form-group">
+        <label for="inputText" class="mt-3">Enter Text:</label>
+        <textarea
+          class="form-control"
+          id="inputText"
+          placeholder="Enter text..."
+        ></textarea>
+      </div>
+
+      <!-- HTML !-->
+      <button class="button-15" role="button" onclick="encodeText()">
+        Encode
+      </button>
+      <button class="button-15" role="button" onclick="decodeText()">
+        Decode
+      </button>
+      <!-- <button class="btn btn-primary" onclick="encodeText()">Encode</button> -->
+      <!-- <button class="" onclick="decodeText()">Decode</button> -->
+
+      <h2 class="mt-4">Result:</h2>
+      <textarea class="form-control" id="outputText" readonly></textarea>
+
+      <!-- HTML !-->
+      <button class="button-23" role="button" onclick="copyToClipboard()">
+        Copy
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

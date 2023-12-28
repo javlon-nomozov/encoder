@@ -1,4 +1,4 @@
-module.exports = function hi(text) {
+module.exports = function (text) {
   let result = "";
   text=text.trim();
 
