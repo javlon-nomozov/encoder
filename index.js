@@ -75,10 +75,8 @@ function copyToClipboard() {
   document.execCommand("copy");
 }
 
-// const decoder = require("./decode");
-// const encoder = require("./encode");
-
-// const encoded = encoder("  Salom 1  ");
-// console.log(';',encoded,';');
-// const decoded = decoder(encoded);
-// console.log(';',decoded,';');
+function pasteText() {
+  navigator.clipboard.readText().then((text) => {
+    document.getElementById("inputText").value = text;
+  });
+}
