@@ -1,5 +1,5 @@
 # encoder
 Web and mobile encoder
 # Exit files
-encode.js and decode.js - are modules
-and index.js is an example usage of them
+index.html main file to open the web app
+index.js and style.css files are additional files
